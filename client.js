@@ -8,27 +8,19 @@ module.exports = class {
     }
 
     reply(replyToken, messages) {
-        return new Promise((resolve, reject) => {
-            const body = {
-                replyToken,
-                messages
-            }
-            this._post('/v2/bot/message/reply', body)
-                .then(resolve)
-                .catch(reject);
-        });
+        const body = {
+            replyToken,
+            messages
+        }
+        return this._post('/v2/bot/message/reply', body);
     }
 
     push(to, messages) {
-        return new Promise((resolve, reject) => {
-            const body = {
-                to,
-                messages
-            }
-            this._post('/v2/bot/message/push', body)
-                .then(resolve)
-                .catch(reject);
-        });
+        const body = {
+            to,
+            messages
+        }
+        return this._post('/v2/bot/message/push', body);
     }
 
     getProfile(userID) {
