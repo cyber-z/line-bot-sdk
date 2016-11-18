@@ -30,16 +30,30 @@ describe('Client', () => {
             describe('on to and messages is correct', () => {
                 const to = process.env.TEST_SOURCE_ID;
                 const messages = [
-                  new SDK.TextMessage('test text message'),
-                  new SDK.Template.Buttons(
-                      new SDK.Template.ButtonsContent(
-                          'https://cyber-z.co.jp/ogp-3.jpg',
-                          'test buttons title',
-                          'test buttons text',
-                          [new SDK.Template.Action.Message('label', 'test')]
-                      ),
-                      'This is test buttons'
-                  )
+                    new SDK.TextMessage('test text message'),
+                    new SDK.Template.Buttons(
+                        new SDK.Template.ButtonsContent(
+                            'https://cyber-z.co.jp/ogp-3.jpg',
+                            'test buttons title',
+                            'test buttons text', [new SDK.Template.Action.Message('label', 'test')]
+                        ),
+                        'This is test buttons'
+                    ),
+                    new SDK.Template.Carousel(
+                        [
+                            new SDK.Template.ButtonsContent(
+                                'https://cyber-z.co.jp/ogp-3.jpg',
+                                'test carousel item A',
+                                'test carousel text', [new SDK.Template.Action.Message('label', 'test')]
+                            ),
+                            new SDK.Template.ButtonsContent(
+                                'https://cyber-z.co.jp/ogp-3.jpg',
+                                'test carousel item B',
+                                'test carousel text', [new SDK.Template.Action.Message('label', 'test')]
+                            )
+                        ],
+                        'This is test carousel'
+                    )
                 ];
 
                 it('send push messages to user', (done) => {
