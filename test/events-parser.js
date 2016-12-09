@@ -59,20 +59,17 @@ describe('EventsParser', () => {
     });
 
     describe('._parseMessage(messageJSON)', () => {
-        const MessageType = SDK.MessageType;
         const messageJSON = {
             id: '325708'
         }
 
         describe("on messageJSON.type is 'text'", () => {
             it('returns TextMessage class instance', () => {
-                messageJSON.type = MessageType.TEXT;
+                messageJSON.type = 'text';
                 messageJSON.text = 'hoge';
                 EventsParser._parseMessage(messageJSON).should.instanceof(SDK.TextMessage);
             });
         });
-
-        // TODO: text以外のメッセージタイプのテストも書く
     });
 
     describe('._parseMessageType(typeString)', () => {
