@@ -22,4 +22,4 @@ module.exports = class {
     get message() {
         return this._message;
     }
-}
+};

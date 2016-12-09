@@ -10,4 +10,4 @@ module.exports = class extends Base {
             _TemplateType: require('../../../enums/template-type')
         });
     }
-}
+};

@@ -3,14 +3,14 @@ module.exports = class extends Base {
     constructor(baseUrl, altText, baseSizeWidth, baseSizeHeight, actions) {
         super();
         Object.assign(this, {
-            type: this._MessageType.IMAGE,
+            type: this._MessageType.IMAGEMAP,
             baseUrl,
             altText,
             baseSize: {
-              width: baseSizeWidth,
-              height: baseSizeHeight
+                width: baseSizeWidth,
+                height: baseSizeHeight
             },
             actions
         });
     }
-}
+};

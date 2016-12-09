@@ -8,4 +8,4 @@ module.exports = class {
     static get GROUP() {
         return 'group';
     }
-}
+};

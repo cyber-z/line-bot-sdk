@@ -32,4 +32,4 @@ module.exports = class {
     static get TEMPLATE() {
         return 'template';
     }
-}
+};

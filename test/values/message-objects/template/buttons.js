@@ -1,13 +1,10 @@
 describe('Buttons', () => {
-    const chai = require('chai');
-    const should = chai.should();
-
     const SDK = require('../../../../');
     const Buttons = SDK.Template.Buttons;
     const Action = SDK.Template.Action;
 
     describe('.constructor(buttonsContent, altText)', () => {
-        describe("on buttonsContent is correctly inputted", () => {
+        describe('on buttonsContent is correctly inputted', () => {
             const thumbnailImageUrl = 'https://example.com/hoge.jpg';
             const title = 'some title';
             const text = 'some description';

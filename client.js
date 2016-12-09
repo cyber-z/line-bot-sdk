@@ -11,7 +11,7 @@ module.exports = class {
         const body = {
             replyToken,
             messages
-        }
+        };
         return this._post('/v2/bot/message/reply', body);
     }
 
@@ -19,7 +19,7 @@ module.exports = class {
         const body = {
             to,
             messages
-        }
+        };
         return this._post('/v2/bot/message/push', body);
     }
 
@@ -47,4 +47,4 @@ module.exports = class {
                 .end((err, res) => err ? reject(err) : resolve(res));
         });
     }
-}
+};

@@ -6,4 +6,4 @@ module.exports = class {
             this.__MessageType = require('../../enums/message-type');
         return this.__MessageType;
     }
-}
+};

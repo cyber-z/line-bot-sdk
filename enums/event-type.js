@@ -28,4 +28,4 @@ module.exports = class {
     static get BEACON() {
         return 'beacon';
     }
-}
+};

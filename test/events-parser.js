@@ -1,7 +1,4 @@
 describe('EventsParser', () => {
-    const chai = require('chai');
-    const should = chai.should();
-
     const SDK = require('../');
     const EventsParser = SDK.EventsParser;
 
@@ -50,7 +47,7 @@ describe('EventsParser', () => {
             });
         });
 
-        describe("on typeString is unsupported one", () => {
+        describe('on typeString is unsupported one', () => {
             it('throws when the argument is present', () => {
                 (() => EventsParser._parseEventType('hoge')).should.throw('hoge is not supported');
             });
@@ -64,12 +61,12 @@ describe('EventsParser', () => {
     describe('._parseMessage(messageJSON)', () => {
         const MessageType = SDK.MessageType;
         const messageJSON = {
-            id: "325708"
+            id: '325708'
         }
 
         describe("on messageJSON.type is 'text'", () => {
             it('returns TextMessage class instance', () => {
-                messageJSON.type = 'text';
+                messageJSON.type = MessageType.TEXT;
                 messageJSON.text = 'hoge';
                 EventsParser._parseMessage(messageJSON).should.instanceof(SDK.TextMessage);
             });
@@ -129,7 +126,7 @@ describe('EventsParser', () => {
             });
         });
 
-        describe("on typeString is unsupported one", () => {
+        describe('on typeString is unsupported one', () => {
             it('throws when the argument is present', () => {
                 (() => EventsParser._parseMessageType('hoge')).should.throw('hoge is not supported');
             });
@@ -195,7 +192,7 @@ describe('EventsParser', () => {
             });
         });
 
-        describe("on typeString is unsupported one", () => {
+        describe('on typeString is unsupported one', () => {
             it('throws when the argument is present', () => {
                 (() => EventsParser._parseSourceType('hoge')).should.throw('hoge is not supported');
             });

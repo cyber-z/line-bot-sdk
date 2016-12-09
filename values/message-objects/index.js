@@ -40,4 +40,4 @@ module.exports = class {
         if (!this._Template) this._Template = require('./template');
         return this._Template;
     }
-}
+};

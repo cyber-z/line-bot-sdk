@@ -30,4 +30,4 @@ module.exports = class {
         if (!this._SourceType) this._SourceType = require('./source-type');
         return this._SourceType;
     }
-}
+};

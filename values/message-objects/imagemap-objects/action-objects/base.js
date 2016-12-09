@@ -4,4 +4,4 @@ module.exports = class {
             this.__ActionType = require('../../../enums/imagemap-action-type');
         return this.__ActionType;
     }
-}
+};

@@ -1,7 +1,4 @@
 describe('ButtonsContent', () => {
-    const chai = require('chai');
-    const should = chai.should();
-
     const SDK = require('../../../../');
     const ButtonsContent = SDK.Template.ButtonsContent;
     const Action = SDK.Template.Action;
@@ -16,7 +13,7 @@ describe('ButtonsContent', () => {
             new Action.URI('label3', 'https://example.com/')
         ];
 
-        describe("on each arguments is correctly inputted", () => {
+        describe('on each arguments is correctly inputted', () => {
             it('returns ButtonsContent instance', () => {
                 new ButtonsContent(thumbnailImageUrl, title, text, actions)
                     .should.instanceof(ButtonsContent);

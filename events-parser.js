@@ -40,7 +40,7 @@ module.exports = class {
         if (event.type !== EventType.UNFOLLOW && event.type !== EventType.LEAVE)
             event.replyToken = eventJSON.replyToken;
 
-        switch(event.type) {
+        switch (event.type) {
             case EventType.MESSAGE:
                 event.message = this._parseMessage(eventJSON.message);
                 break;
@@ -141,4 +141,4 @@ module.exports = class {
                 throw new Error(`${typeString} is not supported`);
         }
     }
-}
+};

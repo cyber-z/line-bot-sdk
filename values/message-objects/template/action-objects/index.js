@@ -15,4 +15,4 @@ module.exports = class {
         if (!this._URI) this._URI = require('./uri');
         return this._URI;
     }
-}
+};

@@ -8,4 +8,4 @@ module.exports = class extends Base {
         this.label = label;
         this.text = text;
     }
-}
+};

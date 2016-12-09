@@ -1,13 +1,10 @@
 describe('Carousel', () => {
-    const chai = require('chai');
-    const should = chai.should();
-
     const SDK = require('../../../../');
     const Carousel = SDK.Template.Carousel;
     const Action = SDK.Template.Action;
 
     describe('.constructor(buttonsContents, altText)', () => {
-        describe("on buttonsContents is correctly inputted", () => {
+        describe('on buttonsContents is correctly inputted', () => {
             const thumbnailImageUrl = 'https://example.com/hoge.jpg';
             const title = 'some title';
             const text = 'some description';

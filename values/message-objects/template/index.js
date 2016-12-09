@@ -25,4 +25,4 @@ module.exports = class {
         if (!this._Action) this._Action = require('./action-objects');
         return this._Action;
     }
-}
+};

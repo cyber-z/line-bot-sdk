@@ -12,4 +12,4 @@ module.exports = class {
     static get CAROUSEL() {
         return 'carousel';
     }
-}
+};

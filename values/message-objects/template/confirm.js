@@ -10,4 +10,4 @@ module.exports = class extends Base {
             actions: actions
         }
     }
-}
+};

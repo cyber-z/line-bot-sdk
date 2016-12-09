@@ -7,4 +7,4 @@ module.exports = class extends Base {
         this.type = this._MessageType.TEXT;
         this.text = text;
     }
-}
+};

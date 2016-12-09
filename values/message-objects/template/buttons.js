@@ -9,4 +9,4 @@ module.exports = class extends Base {
         }
         Object.assign(this.template, buttonsContent);
     }
-}
+};

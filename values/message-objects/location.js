@@ -1,3 +1,5 @@
+'use strict';
+
 const Base = require('./base.js');
 module.exports = class extends Base {
     constructor(title, address, latitude, longitude) {
@@ -10,4 +12,4 @@ module.exports = class extends Base {
             longitude
         });
     }
-}
+};
