@@ -1,7 +1,7 @@
 'use strict';
 
 describe('Client', () => {
-    require('dotenv').config();
+    require('dotenv').config({ silent: true });
 
     const chai = require('chai');
     chai.should();
@@ -74,7 +74,7 @@ describe('Client', () => {
                     new SDK.TextMessage('test text message')
                 ];
 
-                it('recieve the error of too mush messages', done => {
+                it('recieve the error of too much messages', done => {
                     client.push(to, messages).catch(err => {
                         err.status.should.to.equal(400);
                         done();
