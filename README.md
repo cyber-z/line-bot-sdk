@@ -47,3 +47,8 @@ events.forEach(event => {
   client.reply(event.replyToken, messages);
 });
 ```
+
+## How to run test
+
+1. `eslint ./` for lint
+2. `istanbul cover _mocha` to run test and measure code coverage
