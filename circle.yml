@@ -6,7 +6,4 @@ dependencies:
     - npm install --dev
 test:
   override:
-    - ./node_modules/.bin/eslint ./
     - npm test
-  post:
-    - bash <(curl -s https://codecov.io/bash)
