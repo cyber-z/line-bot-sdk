@@ -8,3 +8,5 @@ test:
   override:
     - ./node_modules/.bin/eslint ./
     - ./node_modules/.bin/mocha --recursive
+  post:
+    - bash <(curl -s https://codecov.io/bash)
