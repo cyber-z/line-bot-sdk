@@ -4,6 +4,9 @@ SDK of the LINE Messaging API for `Node.js`.
 
 This is *not official* one.
 
+[![CircleCI](https://circleci.com/gh/cyber-z/line-bot-sdk.svg?style=svg)](https://circleci.com/gh/cyber-z/line-bot-sdk)
+[![codecov](https://codecov.io/gh/cyber-z/line-bot-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/cyber-z/line-bot-sdk)
+
 ## About the LINE Messaging API
 
 See the official API reference documentation for more information.
