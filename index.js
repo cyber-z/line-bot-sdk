@@ -12,59 +12,70 @@ module.exports = class {
     }
 
     // Enums
+    static get _Enum() {
+        this.__Enum = this.__Enum || require('./enums/');
+        return this.__Enum;
+    }
+
     static get EventType() {
-        if (!this._EventType) this._EventType = require('./enums/event-type');
-        return this._EventType;
+        return this._Enum.EventType;
     }
 
     static get MessageType() {
-        if (!this._MessageType) this._MessageType = require('./enums/message-type');
-        return this._MessageType;
+        return this._Enum.MessageType;
     }
 
     static get SourceType() {
-        if (!this._SourceType) this._SourceType = require('./enums/source-type');
-        return this._SourceType;
+        return this._Enum.SourceType;
     }
 
-    // Values
+    static get TemplateType() {
+      return this._Enum.TemplateType;
+    }
+
+    static get TemplateActionType() {
+      return this._Enum.TemplateActionType;
+    }
+
+    static get ImagemapActionType() {
+      return this._Enum.ImagemapActionType;
+    }
+
+    // MessageObjects
+    static get _MessageObject() {
+        this.__MessageObject = this.__MessageObject || require('./values/message-objects/');
+        return this.__MessageObject;
+    }
+
     static get TextMessage() {
-        if (!this._TextMessage) this._TextMessage = require('./values/message-objects/text');
-        return this._TextMessage;
+        return this._MessageObject.Text;
     }
 
     static get Image() {
-        if (!this._Image) this._Image = require('./values/message-objects/image');
-        return this._Image;
+        return this._MessageObject.Image;
     }
 
     static get Video() {
-        if (!this._Video) this._Video = require('./values/message-objects/video');
-        return this._Video;
+        return this._MessageObject.Video;
     }
 
     static get Audio() {
-        if (!this._Audio) this._Audio = require('./values/message-objects/audio');
-        return this._Audio;
+        return this._MessageObject.Audio;
     }
 
     static get Location() {
-        if (!this._Location) this._Location = require('./values/message-objects/location');
-        return this._Location;
+        return this._MessageObject.Location;
     }
 
     static get Sticker() {
-        if (!this._Sticker) this._Sticker = require('./values/message-objects/sticker');
-        return this._Sticker;
+        return this._MessageObject.Sticker;
     }
 
     static get Template() {
-        if (!this._Template) this._Template = require('./values/message-objects/template');
-        return this._Template;
+        return this._MessageObject.Template;
     }
 
     static get Imagemap() {
-        if (!this._Imagemap) this._Imagemap = require('./values/message-objects/imagemap');
-        return this._Imagemap;
+        return this._MessageObject.Imagemap;
     }
 }
