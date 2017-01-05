@@ -6,5 +6,4 @@ dependencies:
     - npm install --dev
 test:
   override:
-    - ./node_modules/.bin/eslint ./
-    - ./node_modules/.bin/mocha --recursive
+    - npm test
