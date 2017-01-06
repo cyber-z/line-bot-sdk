@@ -30,15 +30,15 @@ module.exports = class {
     }
 
     static get TemplateType() {
-      return this._Enum.TemplateType;
+        return this._Enum.TemplateType;
     }
 
     static get TemplateActionType() {
-      return this._Enum.TemplateActionType;
+        return this._Enum.TemplateActionType;
     }
 
     static get ImagemapActionType() {
-      return this._Enum.ImagemapActionType;
+        return this._Enum.ImagemapActionType;
     }
 
     // MessageObjects
