@@ -24,8 +24,7 @@ module.exports = class {
     }
 
     getProfile(userID) {
-        return this._get(`/v2/bot/profile/${userID}`)
-            .then(res => res.body);
+        return this._get(`/v2/bot/profile/${userID}`);
     }
 
     _post(path, body) {
