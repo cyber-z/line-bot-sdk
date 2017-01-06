@@ -1,4 +1,4 @@
-describe("Template.Action.URI", () => {
+describe('Template.Action.URI', () => {
     const SDK = require('../../../../../');
     const Template = SDK.Template;
     const URI = Template.Action.URI;
