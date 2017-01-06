@@ -1,4 +1,4 @@
-describe("Imagemap.Action.URL", () => {
+describe('Imagemap.Action.URL', () => {
     const SDK = require('../../../../../');
     const Imagemap = SDK.Imagemap;
     const URI = Imagemap.Action.URI;
