@@ -57,8 +57,6 @@ describe('Client', () => {
                     client.push(to, messages).then(res => {
                         res.status.should.to.equal(200);
                         done();
-                    }).catch(err => {
-                        throw err;
                     });
                 });
             });
@@ -89,6 +87,19 @@ describe('Client', () => {
                 it('returns error', (done) => {
                     client.push(to, messages).catch(err => {
                         err.status.should.not.to.equal(200);
+                        done();
+                    });
+                });
+            });
+        });
+
+        describe('#getProfile(userID)', () => {
+            describe('on userID is filled', () => {
+                const userID = process.env.TEST_SOURCE_ID;
+
+                it('retrieves user profile', (done) => {
+                    client.getProfile(userID).then(res => {
+                        res.status.should.to.equal(200);
                         done();
                     });
                 });

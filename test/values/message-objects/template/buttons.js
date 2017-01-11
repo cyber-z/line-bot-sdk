@@ -13,12 +13,12 @@ describe('Buttons', () => {
                 new Action.Postback('label2', 'bar'),
                 new Action.URI('label3', 'https://example.com/')
             ];
-
             const buttonsContent = new SDK.Template.ButtonsContent(
                 thumbnailImageUrl, title, text, actions);
+            const buttons = new Buttons(buttonsContent);
 
-            it('returns Buttons instance', () => {
-                new Buttons(buttonsContent).should.instanceof(Buttons);
+            it('has template.type which is TemplateType.BUTTONS', () => {
+                buttons.template.type.should.equal(SDK.TemplateType.BUTTONS);
             });
         });
     });

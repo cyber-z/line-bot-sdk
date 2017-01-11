@@ -1,4 +1,4 @@
-describe('Audio', () => {
+describe('Imagemap', () => {
     const SDK = require('../../../../');
     const Imagemap = SDK.Imagemap;
 

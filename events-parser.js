@@ -2,27 +2,27 @@
 
 module.exports = class {
     static get _Enum() {
-        if (!this.__Enum) this.__Enum = require('./enums');
+        this.__Enum = this.__Enum || require('./enums');
         return this.__Enum;
     }
 
     static get _MessageObject() {
-        if (!this.__MessageObject) this.__MessageObject = require('./values/message-objects');
+        this.__MessageObject = this.__MessageObject || require('./values/message-objects');
         return this.__MessageObject;
     }
 
     static get _Event() {
-        if (!this.__Event) this.__Event = require('./values/event');
+        this.__Event = this.__Event || require('./values/event');
         return this.__Event;
     }
 
     static get _Source() {
-        if (!this.__Source) this.__Source = require('./values/source');
+        this.__Source = this.__Source || require('./values/source');
         return this.__Source;
     }
 
     static get _Postback() {
-        if (!this.__Postback) this.__Postback = require('./values/postback');
+        this.__Postback = this.__Postback || require('./values/postback');
         return this.__Postback;
     }
 
