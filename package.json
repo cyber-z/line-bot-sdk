@@ -1,13 +1,13 @@
 {
-  "name": "line-bot-sdk",
+  "name": "line-bot-sdk-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "The SDK for LINE messaging API",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/eslint ./ && istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && codecov"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Yutaro Soejima, CyberZ",
+  "license": "MIT",
   "dependencies": {
     "superagent": "^2.3.0"
   },
